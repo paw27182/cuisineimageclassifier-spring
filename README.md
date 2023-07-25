@@ -9,7 +9,14 @@
 
 <br>
 
+<img src="cuisineimageclassifier.png">
+
+<br>
+
 # 2. How to use
+
+## 2.1 Activate predict-server (Flask Web app)
+* Install the prerequisite python libraries
 
 * Environment setting
   * Edit settings.py
@@ -18,25 +25,52 @@
 <br>
 
 * Program start
-  * cd cuisineimageclassifier-flask
+  * cd cuisineimageclassifier-spring/predictserver
   * python.exe app.py
 
 <br>
 
-* Open browser
-  * http://localhost:8000/
-  * Submit an image:<br>
-   ./uisineimageclassifier-flask/tests/salad.jpg
+## 2.2 Activate file-uploader (Spring Boot 3 Web app)
+
+### 2.2.1 Setup Eclipse
+  * Install Eclipse
+
+  * Install its plug-in: Spring Tools 4 from Eclipse Marketplace
+
+### 2.2.2 Import spring-boot project
+  * Open Eclipse with the workplace of "cuisineimageclassifier-spring/eclipseworkplace".
+  
+  * [File] [Import] [General] [Project from Folder or Archive] [Next button]
+
+  * [Import source] "CuisineImageClf-1" directory [Select Folder button] [Finish button]
+
+### 2.2.3 Run Spring Boot App 
+
+  * Focus on the project of "CuisineImageClf-1" and mouse RIGHT click
+
+  * [Run As] [Spring Boot App]
+
+
+### 2.2.4 Open browser
+  * http://localhost:8080/
+  * Submit an image file:<br>
+   ./cuisineimageclassifier-spring/predictserver/tests/salad.jpg
 
 <br>
 
 # 3. System
-* OS: Windows 10, Ubuntu 20.04.6 LTS
+* OS: Windows 10
+* Web Framework: Spring Boot 3
+* IDE: Eclipse + Spring Tools 4 (aka Spring Tool Suite 4)
+* Bootstrap 5.2.3
+* jQuery 3.7.0
+
+<br>
+
 * Web Framework: Flask
 * Python 3.10.11
 * Python Libraries: See the requirements.txt file
-* Bootstrap 5.2.3
-* jQuery 3.7.0
+
 
 <br>
 
@@ -44,17 +78,16 @@
 
 | Directory/File |D/F| description |
 | :------------- | :-| :---------- |
-| appmain | Dir | predict program directory |
-| appmain/model | Dir | Machine learning model |
-| appmain/static | Dir | html, javascript files |
-| appmain/templates | Dir | html files |
-| appmain/appmain_bp.py | File | dispatcher |
-| appmain/command.py | File | Machine learning predict program |
-| static | Dir | css, javascript files |
-| templates | Dir | layout.html |
-| tests | Dir | test image files |
-| topview | Dir ||
-| app.py  | File | start program |
-| READMD.md | File ||
-| requirements.txt | File | prerequisite libraries |
+| eclipseworkspace | Dir | eclipse workspace |
+| eclipseworkspace/CusisineImageClf-1 | Dir | file-uploader |
+| eclipseworkspace/CusisineImageClf-1/src/main/java/com/example/demo | Dir | java classes |
+| eclipseworkspace/CusisineImageClf-1/src/main/resources | Dir | static and templates |
+| eclipseworkspace/CusisineImageClf-1/pom.xml | File | Maven Project Object Model |
+|||
+| predictserver | Dir | predict-server |
+| predictserver/appmain | Dir | predict program directory |
+| predictserver/tests | Dir | |
+| predictserver/app.py | File | start program |
+| predictserver/requirements.txt | File | prerequisite libraries |
 | setting.py | File ||
+| README.md | File ||
