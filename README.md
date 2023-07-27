@@ -68,7 +68,7 @@
 <br>
 
 * Web Framework: Flask
-* Python 3.10.11
+* Python 3.11.4
 * Python Libraries: See the requirements.txt file
 
 
