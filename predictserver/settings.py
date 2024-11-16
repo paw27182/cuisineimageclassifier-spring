@@ -8,4 +8,4 @@ PYTHON_EXE_FILE = r"C:/Python/envcic/Scripts/python.exe"  # specify python execu
 # # Linux
 # PYTHON_EXE_FILE = "/home/paw/envcic/bin/python3.10"  # specify python executable file
 
-MODEL_PATH = Path(BASE_DIR, "appmain", "model", "best_model_2.14.0.h5")
+MODEL_PATH = Path(BASE_DIR, "appmain", "model", "best_model_2.18.0.keras")

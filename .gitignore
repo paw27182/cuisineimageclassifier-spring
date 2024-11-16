@@ -3,3 +3,4 @@
 *.pyc
 __pycache__/
 .metadata/
+predictserver/appmain/model/best_model_2.18.0.keras

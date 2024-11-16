@@ -1,3 +1,10 @@
+"""
+1. activate predictserver
+  > python.exe app.py
+  
+2. execute test program
+  > python..exe post.py
+"""
 import ast
 import io
 import json
@@ -51,8 +58,12 @@ def predict_image(input_data):
 
 @appmain_bp.route("/appmain", methods=["POST"])
 def appmain():
-    params = ast.literal_eval(list(request.form.values())[0])  # request form Spring Boot3
-    print(f"[appmain_bp.py] {params= }")
+    
+    if list(request.form.values()):
+        params = ast.literal_eval(list(request.form.values())[0])  # in case request form Spring Boot3
+        print(f"[appmain_bp.py] {params= }")
+    else:
+        pass  # in case post.py test
 
     file = request.files["data_file"]
     file_name = file.filename

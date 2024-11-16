@@ -18,11 +18,12 @@ def post(params, data_file, model_file):
 
     # RESPONSE
     status_code = response.status_code
+    print(f"\nstatus_code= {status_code}")
+    
     content_type = response.headers["Content-Type"]
     content_disposition = response.headers["Content-Disposition"]
     content_length = response.headers["Content-Length"]
 
-    print(f"\nstatus_code= {status_code}")
     print(f"Content-Type= {content_type}")
     print(f"Content-Disposition = {content_disposition}")
     print(f"Content-Length= {content_length}")
@@ -50,7 +51,7 @@ def post(params, data_file, model_file):
 
 params = {"command": "predict"}
 data_file = Path(r"./salad.jpg")
-model_file = Path(r"../appmain/model/best_model_2.13.0.h5")
+model_file = Path(r"../appmain/model/best_model_2.18.0.keras")
 
 r = post(params, data_file, model_file)
 print(r)
