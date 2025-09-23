@@ -22,7 +22,7 @@
 
   STEP1: > git clone git@github.com:paw27182/cuisineimageclassifier-jupyter.git
 
-  STEP2: Copy the model file of 'best_model_2.18.0.keras' to the following directory.
+  STEP2: Copy the model file of 'best_model_2.20.0.keras' to the following directory.
 
          ~/cuisineimageclassifier-spring/predictserver/appmain/model
 
@@ -67,7 +67,7 @@
 <br>
 
 # 3. System
-* OS: Windows 10
+* OS: Windows 10/11
 * Web Framework: Spring Boot 3
 * IDE: Eclipse + Spring Tools 4 (aka Spring Tool Suite 4)
 * Bootstrap 5.2.3
@@ -76,7 +76,7 @@
 <br>
 
 * Web Framework: Flask
-* Python 3.12.7
+* Python 3.13.7
 * Python Libraries: See the requirements.txt file
 
 
